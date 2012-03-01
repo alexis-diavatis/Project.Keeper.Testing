@@ -1,0 +1,16 @@
+
+<table>
+<%  @projects.each do |project| %>
+  <tr>
+    <td width="200"><%= link_to project.project_name, project %></td>
+    <td width="200"><%= simple_format(project.project_domain) %></td>	    
+    <td><%= link_to 'Edit', edit_project_path(project) %></td>
+    <td><%= link_to 'Delete', project, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+
+
+
+

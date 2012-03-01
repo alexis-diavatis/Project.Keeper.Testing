@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Project name:</b>
+  <%= @project.project_name %>
+</p>
+
+<p>
+  <b>Project domain:</b>
+  <%= simple_format (@project.project_domain) %>
+</p>
+
+<p>
+  <b>Project type:</b>
+  <%= @project.project_type %>
+</p>
+
+<p>
+  <b>Project cost:</b>
+  <%= @project.project_cost %>
+</p>
+
+<p>
+  <b>Project login:</b>
+  <%= @project.project_login %>
+</p>
+
+<p>
+  <b>Project todo:</b>
+  <%= @project.project_todo %>
+</p>
+
+<p>
+  <b>Project note:</b>
+  <%= @project.project_note %>
+</p>
+
+<h2>Comments</h2>
+<%= render @project.comments %>
+ 
+<h2>Add a comment:</h2>
+<%= render "comments/form" %>
+ 
+<br />
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

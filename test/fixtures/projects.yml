@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  project_name: MyString
+  project_domain: MyString
+  project_type: MyString
+  project_cost: MyText
+  project_login: MyText
+  project_todo: MyText
+  project_note: MyText
+
+two:
+  project_name: MyString
+  project_domain: MyString
+  project_type: MyString
+  project_cost: MyText
+  project_login: MyText
+  project_todo: MyText
+  project_note: MyText

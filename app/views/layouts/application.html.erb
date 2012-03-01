@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ProjectKeeper</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />-->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" />
+  <%= javascript_include_tag "application" %>
+  <!--<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>-->
+  <script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>	
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div data-role="page">
+<div id="wrapper">
+<div id="main-wrap">
+	<div id="logo">
+		<%=link_to "Project Keeper", root_path %> 
+	</div>
+	<div id="main-menu">
+		<%= link_to "My Projects", projects_path %>
+		<%= link_to 'New Project', new_project_path %>
+	</div>
+	<br />
+	<%= yield %>
+
+</div>
+
+</div>
+</div>
+</body>
+</html>
